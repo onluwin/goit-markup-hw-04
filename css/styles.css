@@ -109,7 +109,8 @@ li {
   width: 135px;
   color: #757575;
 }
-.mail-styles:hover, .mail-styles:focus {
+.mail-styles:hover,
+.mail-styles:focus {
   color: #2196f3;
 }
 .tel-styles {
@@ -123,8 +124,10 @@ li {
   color: #757575;
   width: 135px;
 }
-.tel-styles:hover, .tel-styles:focus {
-  color: #2196f3; }
+.tel-styles:hover,
+.tel-styles:focus {
+  color: #2196f3;
+}
 
 /* ----------MAIN---------- */
 
@@ -409,6 +412,13 @@ li {
 }
 .mainbtn:hover,
 .mainbtn:focus {
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.current-filter {
   color: #ffffff;
   background: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
