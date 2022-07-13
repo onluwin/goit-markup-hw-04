@@ -142,7 +142,7 @@ li {
 
 .hero {
   height: 600px;
-  background-image: url(./images/herobg.png);
+  background-image: url(../images/herobg.png);
 }
 .hero-title {
   padding-bottom: 30px;
