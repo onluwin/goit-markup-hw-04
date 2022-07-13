@@ -95,10 +95,7 @@ li {
   display: flex;
   align-items: center;
 }
-.contact-link:hover,
-.contact-link:focus {
-  color: #2196f3;
-}
+
 .mail-styles {
   font-family: "Roboto";
   font-style: normal;
@@ -113,6 +110,12 @@ li {
 .mail-styles:focus {
   color: #2196f3;
 }
+
+.mail-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .tel-styles {
   margin-left: 50px;
   font-family: "Roboto";
@@ -128,6 +131,10 @@ li {
 .tel-styles:focus {
   color: #2196f3;
 }
+.tel-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
 
 /* ----------MAIN---------- */
 
@@ -135,7 +142,7 @@ li {
 
 .hero {
   height: 600px;
-  background: #2f303a;
+  background-image: url(/images/herobg.png);
 }
 .hero-title {
   padding-bottom: 30px;
@@ -189,7 +196,10 @@ li {
 }
 .peculiarities-item {
   width: 270px;
-  height: 100px;
+  height: 251px;
+}
+.peculiarities-item > img {
+  margin-bottom: 30px;
 }
 .peculiarities-item:not(:last-child) {
   margin-right: 30px;
@@ -247,8 +257,9 @@ li {
 /* ----------TEAM---------- */
 
 .our-team {
-  max-height: 650px;
   background: #f5f4fa;
+  padding-bottom: 94px;
+  padding-top: 95px;
 }
 .container {
   width: 1200px;
@@ -265,19 +276,20 @@ li {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  padding-top: 95px;
   margin: 0;
+  margin-bottom: 50px;
 }
 .team-list {
   display: flex;
-  margin: 50px 215px 0 215px;
+  margin-top: 50px;
+  margin: 0 auto;
   justify-content: center;
-  padding-bottom: 95px;
 }
 .team-card {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: #fff;
 }
 .team-card:not(:last-child) {
   margin-right: 30px;
@@ -309,17 +321,120 @@ li {
   letter-spacing: 0.03em;
   color: #757575;
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
+}
+
+.card-soc-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.card-soc-item {
+  width: 44px;
+  height: 44px;
+}
+.footer-soc {
+}
+.card-soc-item:not(:last-child) {
+  margin-right: 10px;
+}
+.card-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+}
+.card-soc-link:hover,
+.card-soc-link:focus {
+  background-color: #2196f3;
+}
+.card-soc-link:hover > .card-icon,
+.card-soc-link:focus > .card-icon {
+  fill: #fff;
+}
+.card-icon {
+  fill: #afb1b8;
+}
+
+/* --------------------------------------------REGULAR-------------------------- */
+
+.regular {
+}
+.regular-container {
+  padding: 94px 0;
+}
+.regular-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.regular-list {
+  display: flex;
+  height: 92px;
+}
+.regular-item {
+  width: 170px;
+  height: 92px;
+  margin: 0 auto;
+  border: 1px solid #afb1b8;
+  margin: 0;
+}
+.regular-item:hover,
+.regular-item:focus {
+  border: 1px solid #2196f3;
+}
+.regular-item:hover {
+  fill: #2196f3;
+}
+.regular-link:hover > .regular-icon,
+.regular-link:focus > .regular-icon {
+  fill: #2196f3;
+}
+.regular-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.regular-item:not(:last-child) {
+  margin-right: 30px;
+}
+.regular-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
 }
 
 /* ----------FOOTER---------- */
 
 .footer {
-  height: 250px;
   background: #2f303a;
+  height: 252px;
 }
 .footer-container {
-  height: 250px;
+  height: 252px;
+  display: flex;
+}
+.footer-content {
+  height: 132px;
+  width: 231px;
+  margin-right: 70px;
+  padding-top: 50px;
+}
+.footer-contacts {
+  padding-bottom: 60px;
 }
 .footer-logo {
   display: block;
@@ -329,11 +444,17 @@ li {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   color: #ffffff;
-  padding-top: 60px;
+  width: 145px;
+  height: 31px;
+}
+.address {
+  width: 231px;
+  height: 81px;
 }
 .footer-link {
+  display: block;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -341,8 +462,10 @@ li {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+  margin-bottom: 9px;
 }
 .footer-mail {
+  display: block;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -350,12 +473,16 @@ li {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  width: 231px;
+  height: 21px;
+  margin-bottom: 9px;
 }
 .footer-mail:hover,
 .footer-mail:focus {
   color: #2196f3;
 }
 .footer-tel {
+  display: block;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -363,10 +490,33 @@ li {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  width: 231px;
+  height: 21px;
 }
 .footer-tel:hover,
 .footer-tel:focus {
   color: #2196f3;
+}
+.footer-social {
+  padding-top: 60px;
+  width: 206px;
+  height: 80px;
+}
+.footer-social-title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
 }
 
 /* ----------PORTFOLIO STYLES---------- */
@@ -392,6 +542,8 @@ li {
 }
 .mainbtn-item {
   display: inline;
+}
+.mainbtn-item:not(:last-child) {
   margin-right: 10px;
 }
 .mainbtn {
@@ -466,6 +618,10 @@ li {
 }
 .card:last-child {
   margin: 0;
+}
+.card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .text-card {
   width: 322px;
