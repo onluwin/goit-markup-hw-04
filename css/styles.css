@@ -95,7 +95,16 @@ li {
   display: flex;
   align-items: center;
 }
-
+.contact-link {
+  height: 17px;
+}
+.contact-link:not(:last-child) {
+  margin-right: 30px;
+}
+.contact-link > .tel-styles {
+  justify-content: center;
+  align-items: center;
+}
 .mail-styles {
   font-family: "Roboto";
   font-style: normal;
@@ -105,6 +114,13 @@ li {
   letter-spacing: 0.02em;
   width: 135px;
   color: #757575;
+  align-items: center;
+  height: 16px;
+  width: 161px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 .mail-styles:hover,
 .mail-styles:focus {
@@ -114,10 +130,11 @@ li {
 .mail-icon {
   margin-right: 10px;
   fill: currentColor;
+  display: flex;
+  justify-items: center;
 }
 
 .tel-styles {
-  margin-left: 50px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -125,11 +142,16 @@ li {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
-  width: 135px;
+  width: 142px;
+  height: 16px;
+  align-content: center;
+  display: flex;
 }
 .tel-styles:hover,
 .tel-styles:focus {
   color: #2196f3;
+}
+.tel-styles > .tel-icon {
 }
 .tel-icon {
   margin-right: 10px;
@@ -197,6 +219,18 @@ li {
 .peculiarities-item {
   width: 270px;
   height: 251px;
+}
+.peculiarities-box-icon {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+.peculiarities-box-icon > .peculiarities-icon {
+  margin: auto;
 }
 .peculiarities-item > img {
   margin-bottom: 30px;
